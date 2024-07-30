@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="style2" href="style.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+         <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Website Kami</h2>
+    <p>Ini adalah halaman beranda.</p>
+  </section>
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <p>
+      <table>
+        <tr>
+          <td rowspan="12" width="150px">
+            <img src="fika.jpeg" alt="" width="250px" height="355px" border="5">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Nama Lengkap</b></td> 
+          <td style="text-align: left;">: Rafika Weripih</td>
+         
+        </tr>
+        <tr>
+  <td style="text-align: left;"><b>NIM</b></td>
+          <td style="text-align: left;">: 16323053</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>TTL</b></td>
+          <td style="text-align: left;">: Fakfak, 24 Agustus 2005</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Alamat</b></td>
+          <td style="text-align: left;">: Tanama</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Jenis Kelamin</b></td>
+          <td style="text-align: left;">: Perempuan</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Agama</b></td>
+          <td style="text-align: left;">: Islam</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Email</b></td>
+          <td style="text-align: left;">: rafikaweripih9@gmail.com</td>
+        </tr>
+      </table>
+    </p>
+  </section>
+  <section id="audio-video">
+    <h2>Audio dan Video</h2>
+    <p>Ini adalah halaman audio dan video.</p>
+    <audio controls src="Andmesh - Senyumlah  (128 kbps).mp3"></audio>
+    <video controls autoplay src="sunset.mp4" width="250" height="250"></video>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Sequi a maxime eius maiores eaque ut corrupti explicabo dolores rem deleniti, 
+        pariatur animi nam aperiam quo voluptatem asperiores, quia nulla eos!.
+        Sequi a maxime eius maiores eaque ut corrupti explicabo dolores rem deleniti
+        Sequi a maxime eius maiores eaque ut corrupti explicabo dolores rem deleniti</p>
+  </section>
+
+  <section id="berita">
+    <h2>Berita Terbaru</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+         natus ex! Minus ex dolores nisi consequuntur tempore perspiciatis libero ea ipsa vitae soluta? 
+         Unde sint laboriosam quisquam dolorem corrupti voluptatem?.
+         Sequi a maxime eius maiores eaque ut corrupti explicabo dolores rem deleniti
+         Sequi a maxime eius maiores eaque ut corrupti explicabo dolores rem deleniti</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Rafika</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
+ 
